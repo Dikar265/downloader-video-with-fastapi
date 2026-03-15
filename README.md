@@ -63,13 +63,39 @@ git clone https://github.com/Dikar265/downloader-video-with-fastapi.git
 cd downloader-video-with-fastapi
 ```
 
-## 2. Install dependencies
+## 2. Create a virtual environment
+
+### Linux / macOS
+
+```bash
+python3.12 -m venv venv
+source venv/bin/activate
+```
+
+### Windows (PowerShell)
+
+```powershell
+py -3.12 -m venv venv
+venv\Scripts\Activate.ps1
+```
+
+After activation you should see:
+
+```
+(venv)
+```
+
+in your terminal.
+
+---
+
+## 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 3. Install FFmpeg
+## 4. Install FFmpeg
 
 `yt-dlp` requires **ffmpeg** for merging audio and video.
 
